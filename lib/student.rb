@@ -1,5 +1,8 @@
 class Student < User
-  @@knowledge = []
+  attr_accessor
+  def initialize
+    @knowledge = []
+  end
 
   def learn(string)
     @@knowledge << string
